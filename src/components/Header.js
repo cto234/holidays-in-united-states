@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavLink, useLocation } from 'react-router-dom'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 const Header = () => {
