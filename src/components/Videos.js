@@ -1,4 +1,7 @@
 import { useState } from "react";
+import videosButton from '../handwriting/videos-button.png'
+import leftArrow from '../handwriting/left-arrow.png'
+import rightArrow from '../handwriting/right-arrow.png'
 
 const Videos = () => {
     // State to track the current video index
@@ -21,7 +24,7 @@ const Videos = () => {
 
     return (
         <div className="relative w-full max-w-lg mx-auto">
-            <h1>Videos</h1>
+            <img src={videosButton}></img>
             <div className="video-slide">
                 <iframe
                     width="100%"
@@ -34,18 +37,18 @@ const Videos = () => {
             </div>
 
             {/* Navigation Buttons */}
-            <button
+            <img
+                src={leftArrow}
                 onClick={prevVideo}
-                className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full hover:bg-gray-600"
+                className="absolute top-1/2 left-2 transform -translate-y-1/2 text-white p-2 rounded-full"
             >
-                &lt;
-            </button>
-            <button
+            </img>
+            <img
+                src={rightArrow}
                 onClick={nextVideo}
-                className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full hover:bg-gray-600"
+                className="absolute top-1/2 right-2 transform -translate-y-1/2 text-white p-2 rounded-full"
             >
-                &gt;
-            </button>
+            </img>
         </div>
     );
 };

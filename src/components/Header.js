@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import homeButton from '../handwriting/home-button.png'
+import showsButton from '../handwriting/shows-button.png'
+import videosButton from '../handwriting/videos-button.png'
 
 const Header = () => {
 
@@ -33,15 +35,19 @@ const Header = () => {
       };
 
     return (
-        <div className="header-container w-full bg-gray-800 text-white flex justify-evenly py-4 sticky top-0 z-10">
+        <div className="header-container w-full bg-slate-50 text-white flex justify-evenly py-4 sticky top-0 z-10">
             {/* Home Section */}
             <ScrollLink to="homeSection" smooth={true} duration={800}>
-                <div className="home-button cursor-pointer hover:text-gray-300" onClick={scrollToTop}>Home</div>
+                <div className="home-button cursor-pointer hover:text-gray-300 w-32" onClick={scrollToTop}>
+                  <img src={homeButton}></img>
+                </div>
             </ScrollLink>
         
             {/* Video Section */}
             <ScrollLink to="videoSection" smooth={true} duration={800}>
-                <div className="video-button cursor-pointer hover:text-gray-300" onClick={scrollToVideos}>Videos</div>
+                <div className="video-button cursor-pointer hover:text-gray-300 w-36 pt-4" onClick={scrollToVideos}>
+                  <img src={videosButton}></img>
+                </div>
             </ScrollLink>
         
             {/* Merch Section (WIP)
@@ -52,7 +58,9 @@ const Header = () => {
         
             {/* Shows Section */}
             <ScrollLink to="showsSection" smooth={true} duration={800}>
-                <div className="shows-button cursor-pointer hover:text-gray-300" onClick={scrollToShows}>Shows</div>
+                <div className="shows-button cursor-pointer hover:text-gray-300 w-32 pt-3" onClick={scrollToShows}>
+                  <img src={showsButton}></img>
+                </div>
             </ScrollLink>
         </div>
     

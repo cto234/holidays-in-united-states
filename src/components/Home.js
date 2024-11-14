@@ -4,14 +4,16 @@ import Videos from "./Videos";
 import Music from "./Music";
 import Merch from "./Merch";
 import Shows from "./Shows";
+import hiusLogo from "../handwriting/hius-logo.png"
+import nycEmo from '../handwriting/nyc-emo.png'
 
 const Home = () => {
     return(
         <>
             <Header />
             <div className='home-section'>
-                <h1 className='text-center text-5xl font-bold'>Holidays in United States</h1> {/* replace with logo */}
-                <h2 className='text-center text-lg'>New York City Emo</h2>
+                <img src={hiusLogo} className="w-1/3 mx-auto"></img>
+                <img src={nycEmo} className="w-1/4 mx-auto"></img>
             </div>
             <div className='content-container'>
                 <Music />

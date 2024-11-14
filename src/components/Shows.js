@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import upcomingShows from '../handwriting/upcoming-shows.png'
 import stoneCircleFlyer from '../images/stone-circle-flyer.jpeg';
 import babysFlyer from '../images/babys-flyer.png';
 import branchingOutFlyer from '../images/branching-out-flyer.jpeg';
@@ -94,7 +95,7 @@ const Shows = () => {
 
     return (
         <div className="overflow-x-auto w-full max-w-2xl mx-auto my-8">
-            <h1>Upcoming Shows</h1>
+            <img src={upcomingShows}></img>
             <table className="min-w-full bg-white shadow-md rounded border border-gray-200">
                 <thead>
                     <tr>
