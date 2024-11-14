@@ -15,9 +15,9 @@ const Home = () => {
             </div>
             <div className='content-container'>
                 <Music />
-                <Videos id='videoSection'/>
-                <Merch />
-                <Shows />
+                <div id="videoSection"> <Videos id='videoSection'/> </div>
+                {/* <Merch /> */}
+                <div id="showsSection"> <Shows /> </div>
             </div>
         </>
     )

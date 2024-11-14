@@ -5,15 +5,17 @@ import branchingOutFlyer from '../images/branching-out-flyer.jpeg';
 import rubaladFlyer from '../images/rubalad-flyer.jpeg';
 import windjammerFlyer from '../images/windjammer-flyer.jpeg';
 import ttjFlyer from '../images/ttj-flyer.jpeg';
+import raysFlyer from '../images/rays-flyer.jpeg'
 
 const Shows = () => {
     const shows = [
         {
             location: "Ray's Bar",
             date: "Nov 17, 2024",
-            flyer: "",
+            flyer: raysFlyer,
             bands: [
-                { name: "Autobahn", musicUrl: "https://www.youtube.com/watch?v=QFMv0HvMJqo&ab_channel=JarretWolfson" }
+                { name: "Push Ups", musicUrl: "https://open.spotify.com/artist/4FfErbZ5piaImVT2YTdA1z?si=geIbc2X7SQimaBt_qWcuFA" },
+                { name: "Zachshots", musicUrl: "https://open.spotify.com/artist/4eD7ODnvaXfX9XCBxtvjSc?si=yImK71aXSK2pbYo_O6kFcw" }
             ]
         },
         {

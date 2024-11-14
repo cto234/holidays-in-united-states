@@ -6,8 +6,8 @@ const Videos = () => {
 
 
     const videoUrls = [
-        'https://www.youtube.com/embed/5LbY7oKXjSk?si=zpxS83-LUTJ8zM-b', {/* TJ Byrne's */},
-        'https://www.youtube.com/embed/O9Ynw0ns98U?si=rVhWGf1CkxPv9wM9', {/* Windjammer */}
+        'https://www.youtube.com/embed/5LbY7oKXjSk?si=zpxS83-LUTJ8zM-b',
+        'https://www.youtube.com/embed/O9Ynw0ns98U?si=rVhWGf1CkxPv9wM9',
     ];
 
     //Navigation
