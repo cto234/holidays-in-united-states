@@ -12,8 +12,8 @@ const Home = () => {
         <>
             <Header />
             <div className='home-section'>
-                <img src={hiusLogo} className="w-1/3 mx-auto"></img>
-                <img src={nycEmo} className="w-1/4 mx-auto"></img>
+                <img src={hiusLogo} className="w-1/3 mx-auto pt-8"></img>
+                <img src={nycEmo} className="w-1/4 mx-auto p-4"></img>
             </div>
             <div className='content-container'>
                 <Music />

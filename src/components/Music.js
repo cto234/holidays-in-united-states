@@ -5,7 +5,7 @@ import bandcampLogo from '../images/bandcamp-logo.png'
 const Music = () => {
     return(
        <div>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center pt-10'>
                 <iframe 
                         src="https://open.spotify.com/embed/album/43Oc3iEE5Kp4bhuWAwYunq?utm_source=generator" 
                         width="40%" 
@@ -20,7 +20,7 @@ const Music = () => {
                         src={spotifyLogo}
                         alt="Spotify"
                         width={'100%'}
-                        className="hover:opacity-80"
+                        className="hover:opacity-80 pt--1"
                         />
                     </a>
                     <a href="https://music.apple.com/us/artist/holidays-in-united-states/1716624268">
@@ -28,7 +28,7 @@ const Music = () => {
                         src={appleMusicLogo}
                         alt="Apple Music"
                         width={'90%'}
-                        className="hover:opacity-80"
+                        className="hover:opacity-80 pt-1"
                         />
                     </a>
                     <a href="https://holidaysinunitedstates.bandcamp.com/album/holidays-in-united-states">
@@ -36,7 +36,7 @@ const Music = () => {
                         src={bandcampLogo}
                         alt="Bandcamp"
                         width={'90%'}
-                        className="hover:opacity-80"
+                        className="hover:opacity-80 pt-1"
                         />
                     </a>
             </div>

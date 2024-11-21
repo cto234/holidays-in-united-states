@@ -11,15 +11,6 @@ import raysFlyer from '../images/rays-flyer.jpeg'
 const Shows = () => {
     const shows = [
         {
-            location: "Ray's Bar",
-            date: "Nov 17, 2024",
-            flyer: raysFlyer,
-            bands: [
-                { name: "Push Ups", musicUrl: "https://open.spotify.com/artist/4FfErbZ5piaImVT2YTdA1z?si=geIbc2X7SQimaBt_qWcuFA" },
-                { name: "Zachshots", musicUrl: "https://open.spotify.com/artist/4eD7ODnvaXfX9XCBxtvjSc?si=yImK71aXSK2pbYo_O6kFcw" }
-            ]
-        },
-        {
             location: "Stone Circle Theater",
             date: "Dec 8, 2024",
             flyer: stoneCircleFlyer,
@@ -30,6 +21,15 @@ const Shows = () => {
     ];
 
     const previousShows = [
+        {
+            location: "Ray's Bar",
+            date: "Nov 17, 2024",
+            flyer: raysFlyer,
+            bands: [
+                { name: "Push Ups", musicUrl: "https://open.spotify.com/artist/4FfErbZ5piaImVT2YTdA1z?si=geIbc2X7SQimaBt_qWcuFA" },
+                { name: "Zachshots", musicUrl: "https://open.spotify.com/artist/4eD7ODnvaXfX9XCBxtvjSc?si=yImK71aXSK2pbYo_O6kFcw" }
+            ]
+        },
         {
             location: "Baby's All Right",
             date: "Oct 28, 2024",
@@ -95,23 +95,26 @@ const Shows = () => {
 
     return (
         <div className="overflow-x-auto w-full max-w-2xl mx-auto my-8">
-            <img src={upcomingShows}></img>
-            <table className="min-w-full bg-white shadow-md rounded border border-gray-200">
+            <img src={upcomingShows} alt='Upcoming Shows' className="mx-auto w-1/2 pt-20 pb-5"></img>
+            <table className="min-w-full bg-white shadow-md rounded font-elegant">
                 <thead>
                     <tr>
-                        <th className="py-2 px-4 border-b">Location</th>
-                        <th className="py-2 px-4 border-b">Date</th>
-                        <th className="py-2 px-4 border-b">With</th>
+                        <th className="py-2 px-4 border-b text-left">Location</th>
+                        <th className="py-2 px-4 border-b text-left">Date</th>
+                        <th className="py-2 px-4 border-b text-left">With</th>
                     </tr>
                 </thead>
                 <tbody>
                     {shows.map((show, index) => (
-                        <tr key={index}>
-                            <td className="py-2 px-4 border-b text-blue-600 cursor-pointer hover:underline" onClick={() => setSelectedFlyer(show.flyer)}>
+                        <tr key={index} className="border-b">
+                            <td
+                                className="py-2 px-4 text-blue-600 cursor-pointer hover:underline"
+                                onClick={() => setSelectedFlyer(show.flyer)}
+                            >
                                 {show.location}
                             </td>
-                            <td className="py-2 px-4 border-b">{show.date}</td>
-                            <td className="py-2 px-4 border-b">
+                            <td className="py-2 px-4">{show.date}</td>
+                            <td className="py-2 px-4">
                                 {show.bands.map((band, i) => (
                                     <a
                                         key={i}
@@ -137,38 +140,42 @@ const Shows = () => {
             </button>
 
             {showPreviousShows && (
-                <table className="min-w-full bg-white shadow-md rounded border border-gray-200 mt-4">
-                    <thead>
-                        <tr>
-                            <th className="py-2 px-4 border-b">Location</th>
-                            <th className="py-2 px-4 border-b">Date</th>
-                            <th className="py-2 px-4 border-b">With</th>
+                <table className="min-w-full bg-white shadow-md rounded mt-4 font-elegant">
+                <thead>
+                    <tr className="border-b">
+                        <th className="py-2 px-4 text-left">Location</th>
+                        <th className="py-2 px-4 text-left">Date</th>
+                        <th className="py-2 px-4 text-left">With</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {previousShows.map((show, index) => (
+                        <tr key={index} className="border-b">
+                            <td
+                                className="py-2 px-4 text-blue-600 cursor-pointer hover:underline"
+                                onClick={() => setSelectedFlyer(show.flyer)}
+                            >
+                                {show.location}
+                            </td>
+                            <td className="py-2 px-4">{show.date}</td>
+                            <td className="py-2 px-4">
+                                {show.bands.map((band, i) => (
+                                    <a
+                                        key={i}
+                                        href={band.musicUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-blue-600 hover:underline mr-2"
+                                    >
+                                        {band.name}
+                                    </a>
+                                ))}
+                            </td>
                         </tr>
-                    </thead>
-                    <tbody>
-                        {previousShows.map((show, index) => (
-                            <tr key={index}>
-                                <td className="py-2 px-4 border-b text-blue-600 cursor-pointer hover:underline" onClick={() => setSelectedFlyer(show.flyer)}>
-                                    {show.location}
-                                </td>
-                                <td className="py-2 px-4 border-b">{show.date}</td>
-                                <td className="py-2 px-4 border-b">
-                                    {show.bands.map((band, i) => (
-                                        <a
-                                            key={i}
-                                            href={band.musicUrl}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-blue-600 hover:underline mr-2"
-                                        >
-                                            {band.name}
-                                        </a>
-                                    ))}
-                                </td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
+                    ))}
+                </tbody>
+            </table>
+            
             )}
 
             {selectedFlyer && (

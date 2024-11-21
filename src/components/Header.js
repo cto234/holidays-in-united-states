@@ -38,14 +38,14 @@ const Header = () => {
         <div className="header-container w-full bg-slate-50 text-white flex justify-evenly py-4 sticky top-0 z-10">
             {/* Home Section */}
             <ScrollLink to="homeSection" smooth={true} duration={800}>
-                <div className="home-button cursor-pointer hover:text-gray-300 w-32" onClick={scrollToTop}>
+                <div className="home-button cursor-pointer hover:text-gray-300 w-24" onClick={scrollToTop}>
                   <img src={homeButton}></img>
                 </div>
             </ScrollLink>
         
             {/* Video Section */}
             <ScrollLink to="videoSection" smooth={true} duration={800}>
-                <div className="video-button cursor-pointer hover:text-gray-300 w-36 pt-4" onClick={scrollToVideos}>
+                <div className="video-button cursor-pointer hover:text-gray-300 w-24 pt-3" onClick={scrollToVideos}>
                   <img src={videosButton}></img>
                 </div>
             </ScrollLink>
@@ -58,7 +58,7 @@ const Header = () => {
         
             {/* Shows Section */}
             <ScrollLink to="showsSection" smooth={true} duration={800}>
-                <div className="shows-button cursor-pointer hover:text-gray-300 w-32 pt-3" onClick={scrollToShows}>
+                <div className="shows-button cursor-pointer hover:text-gray-300 w-24 pt-2" onClick={scrollToShows}>
                   <img src={showsButton}></img>
                 </div>
             </ScrollLink>

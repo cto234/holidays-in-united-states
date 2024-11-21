@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'ElegantTypewriter';
+    src: url('./fonts/ELEGANT TYPEWRITER Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
