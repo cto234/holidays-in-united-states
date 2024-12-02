@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        elegant: ['ElegantTypewriter', 'serif'], // Add your custom font
+        alteHaas: ['AlteHaas', 'serif'], // Add your custom font
       },
     },
   },

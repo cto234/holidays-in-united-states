@@ -2,6 +2,7 @@ import { useState } from "react";
 import videosButton from '../handwriting/videos-button.png'
 import leftArrow from '../handwriting/left-arrow.png'
 import rightArrow from '../handwriting/right-arrow.png'
+import darkLinedPaper from '../images/dark-lined-paper.jpg'
 
 const Videos = () => {
     // State to track the current video index
@@ -9,8 +10,8 @@ const Videos = () => {
 
 
     const videoUrls = [
-        'https://www.youtube.com/embed/5LbY7oKXjSk?si=zpxS83-LUTJ8zM-b',
         'https://www.youtube.com/embed/O9Ynw0ns98U?si=rVhWGf1CkxPv9wM9',
+        'https://www.youtube.com/embed/5LbY7oKXjSk?si=zpxS83-LUTJ8zM-b',
         'https://www.youtube.com/embed/zuXWz4Q8-VA?si=SJcBnjd8zLU_Rvg_'
     ];
 
@@ -24,9 +25,9 @@ const Videos = () => {
     };
 
     return (
-        <div className="relative w-full max-w-lg mx-auto">
+    <div className="relative w-full max-w-lg mx-auto">
         <img src={videosButton} alt="Videos Button" className="mx-auto w-1/3 pt-20 pb-5"/>
-        <div className="video-slide relative">
+        <div className="video-slide relative pb-10">
             <iframe
                 width="100%"
                 height="315"

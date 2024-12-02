@@ -7,6 +7,7 @@ import rubaladFlyer from '../images/rubalad-flyer.jpeg';
 import windjammerFlyer from '../images/windjammer-flyer.jpeg';
 import ttjFlyer from '../images/ttj-flyer.jpeg';
 import raysFlyer from '../images/rays-flyer.jpeg'
+import rippedPaper from '../images/ripped-paper.png'
 
 const Shows = () => {
     const shows = [
@@ -94,19 +95,21 @@ const Shows = () => {
     }, [selectedFlyer]);
 
     return (
-        <div className="overflow-x-auto w-full max-w-2xl mx-auto my-8">
+        <div className="overflow-x-auto w-full max-w-2xl mx-auto my-8 bg-cover bg-center"
+        style={{ backgroundImage: `url(${rippedPaper})` }}>
+
             <img src={upcomingShows} alt='Upcoming Shows' className="mx-auto w-1/2 pt-20 pb-5"></img>
-            <table className="min-w-full bg-white shadow-md rounded font-elegant">
+            <table className="min-w-full bg-white rounded mt-4 font-alteHaas bg-transparent">
                 <thead>
                     <tr>
-                        <th className="py-2 px-4 border-b text-left">Location</th>
-                        <th className="py-2 px-4 border-b text-left">Date</th>
-                        <th className="py-2 px-4 border-b text-left">With</th>
+                        <th className="py-2 px-4 text-left">Location</th>
+                        <th className="py-2 px-4 text-left">Date</th>
+                        <th className="py-2 px-4 text-left">With</th>
                     </tr>
                 </thead>
                 <tbody>
                     {shows.map((show, index) => (
-                        <tr key={index} className="border-b">
+                        <tr key={index}>
                             <td
                                 className="py-2 px-4 text-blue-600 cursor-pointer hover:underline"
                                 onClick={() => setSelectedFlyer(show.flyer)}
@@ -132,17 +135,20 @@ const Shows = () => {
                 </tbody>
             </table>
 
-            <button
-                onClick={() => setShowPreviousShows(!showPreviousShows)}
-                className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-            >
-                {showPreviousShows ? "Hide Previous Shows" : "Show Previous Shows"}
-            </button>
+            <div className="flex justify-center">
+                <button
+                    onClick={() => setShowPreviousShows(!showPreviousShows)}
+                    className="mt-4 px-4 py-2 underline"
+                >
+                    {showPreviousShows ? "Hide Previous Shows" : "Show Previous Shows"}
+                </button>
+            </div>
+
 
             {showPreviousShows && (
-                <table className="min-w-full bg-white shadow-md rounded mt-4 font-elegant">
+                <table className="min-w-full bg-white rounded mt-4 font-alteHaas bg-transparent">
                 <thead>
-                    <tr className="border-b">
+                    <tr>
                         <th className="py-2 px-4 text-left">Location</th>
                         <th className="py-2 px-4 text-left">Date</th>
                         <th className="py-2 px-4 text-left">With</th>
@@ -150,7 +156,7 @@ const Shows = () => {
                 </thead>
                 <tbody>
                     {previousShows.map((show, index) => (
-                        <tr key={index} className="border-b">
+                        <tr key={index}>
                             <td
                                 className="py-2 px-4 text-blue-600 cursor-pointer hover:underline"
                                 onClick={() => setSelectedFlyer(show.flyer)}

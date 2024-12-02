@@ -1,10 +1,14 @@
 import spotifyLogo from '../images/spotify-logo.png'
 import appleMusicLogo from '../images/apple-music-logo.png'
 import bandcampLogo from '../images/bandcamp-logo.png'
+import linedPaper from '../images/lined-paper.jpg'
+import yellowLinedPaper from '../images/yellow-lined-paper.jpg'
 
 const Music = () => {
     return(
-       <div>
+       <div className="bg-cover bg-center"
+        style={{ backgroundImage: `url(${linedPaper})` }}>"
+
             <div className='flex justify-center items-center pt-10'>
                 <iframe 
                         src="https://open.spotify.com/embed/album/43Oc3iEE5Kp4bhuWAwYunq?utm_source=generator" 
