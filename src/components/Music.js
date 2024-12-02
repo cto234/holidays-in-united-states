@@ -1,13 +1,12 @@
 import spotifyLogo from '../images/spotify-logo.png'
 import appleMusicLogo from '../images/apple-music-logo.png'
 import bandcampLogo from '../images/bandcamp-logo.png'
-import linedPaper from '../images/lined-paper.jpg'
-import yellowLinedPaper from '../images/yellow-lined-paper.jpg'
+import doodles from '../images/doodles.jpg'
 
 const Music = () => {
     return(
        <div className="bg-cover bg-center"
-        style={{ backgroundImage: `url(${linedPaper})` }}>"
+        style={{ backgroundImage: `url(${doodles})` }}>"
 
             <div className='flex justify-center items-center pt-10'>
                 <iframe 
@@ -32,7 +31,7 @@ const Music = () => {
                         src={appleMusicLogo}
                         alt="Apple Music"
                         width={'90%'}
-                        className="hover:opacity-80 pt-1"
+                        className="hover:opacity-80 pt-4"
                         />
                     </a>
                     <a href="https://holidaysinunitedstates.bandcamp.com/album/holidays-in-united-states">

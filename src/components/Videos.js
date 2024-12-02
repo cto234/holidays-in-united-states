@@ -2,7 +2,6 @@ import { useState } from "react";
 import videosButton from '../handwriting/videos-button.png'
 import leftArrow from '../handwriting/left-arrow.png'
 import rightArrow from '../handwriting/right-arrow.png'
-import darkLinedPaper from '../images/dark-lined-paper.jpg'
 
 const Videos = () => {
     // State to track the current video index

@@ -99,7 +99,7 @@ const Shows = () => {
         style={{ backgroundImage: `url(${rippedPaper})` }}>
 
             <img src={upcomingShows} alt='Upcoming Shows' className="mx-auto w-1/2 pt-20 pb-5"></img>
-            <table className="min-w-full bg-white rounded mt-4 font-alteHaas bg-transparent">
+            <table className="min-w-full rounded mt-4 font-alteHaas bg-transparent">
                 <thead>
                     <tr>
                         <th className="py-2 px-4 text-left">Location</th>
@@ -146,14 +146,7 @@ const Shows = () => {
 
 
             {showPreviousShows && (
-                <table className="min-w-full bg-white rounded mt-4 font-alteHaas bg-transparent">
-                <thead>
-                    <tr>
-                        <th className="py-2 px-4 text-left">Location</th>
-                        <th className="py-2 px-4 text-left">Date</th>
-                        <th className="py-2 px-4 text-left">With</th>
-                    </tr>
-                </thead>
+                <table className="min-w-full rounded mt-4 font-alteHaas bg-transparent">
                 <tbody>
                     {previousShows.map((show, index) => (
                         <tr key={index}>
@@ -190,7 +183,7 @@ const Shows = () => {
                     onClick={() => setSelectedFlyer(null)}
                 >
                     <div
-                        className="relative bg-white p-4 rounded shadow-lg max-w-md w-full"
+                        className="relative p-4 rounded shadow-lg max-w-md w-full"
                         onClick={(e) => e.stopPropagation()}
                     >
                         <img src={selectedFlyer} alt="Show Flyer" className="w-full rounded" />

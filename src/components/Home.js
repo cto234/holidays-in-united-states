@@ -6,7 +6,7 @@ import Shows from "./Shows";
 import hiusLogo from "../handwriting/hius-logo.png"
 import nycEmo from '../handwriting/nyc-emo.png'
 import darkLinedPaper from '../images/dark-lined-paper.jpg'
-import gridPaper from '../images/grid-paper.jpg'
+import linedPaper2 from '../images/lined-paper-2.jpg'
 
 const Home = () => {
     return(
@@ -21,7 +21,7 @@ const Home = () => {
             <div className='content-container'>
                 <Music />
                 <div className="bg-cover bg-center" id="videoSection"
-                    style={{ backgroundImage: `url(${gridPaper})` }}> <Videos id='videoSection'/> </div>
+                    style={{ backgroundImage: `url(${linedPaper2})` }}> <Videos id='videoSection'/> </div>
                 {/* <Merch /> */}
                 <div id="showsSection"className="bg-cover bg-center">
                     <Shows /> </div>

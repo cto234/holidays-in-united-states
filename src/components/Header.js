@@ -3,7 +3,6 @@ import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import homeButton from '../handwriting/home-button.png'
 import showsButton from '../handwriting/shows-button.png'
 import videosButton from '../handwriting/videos-button.png'
-import linedPaper2 from '../images/lined-paper-2.jpg'
 
 const Header = () => {
 
@@ -36,8 +35,8 @@ const Header = () => {
       };
 
     return (
-        <div className="header-container w-full flex justify-evenly py-4 sticky top-0 z-10 bg-cover bg-center"
-          style={{ backgroundImage: `url(${linedPaper2})` }}>
+        <div className="header-container w-full flex justify-evenly py-4 sticky top-0 z-10 bg-indigo-300 bg-cover bg-center">
+          {/* style={{ backgroundImage: `url(${linedPaper2})` }}> */}
 
             {/* Home Section */}
             <ScrollLink to="homeSection" smooth={true} duration={800}>
