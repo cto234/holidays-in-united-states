@@ -13,10 +13,10 @@ const Home = () => {
         <>
             <Header />
             <div className="bg-cover bg-center"
-            style={{ backgroundImage: `url(${darkLinedPaper})` }}>"
+            style={{ backgroundImage: `url(${darkLinedPaper})` }}>
 
-                <img src={hiusLogo} className="w-1/3 mx-auto pt-8"></img>
-                <img src={nycEmo} className="w-1/4 mx-auto p-4"></img>
+                <img alt="Holidays Logo" src={hiusLogo} className="w-full md:w-1/3 mx-auto pt-8"></img>
+                <img alt="New York City Emo" src={nycEmo} className="w-3/4 md:w-1/4 mx-auto p-4"></img>
             </div>
             <div className='content-container'>
                 <Music />

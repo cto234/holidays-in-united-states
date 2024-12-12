@@ -11,17 +11,19 @@ import rippedPaper from '../images/ripped-paper.png'
 
 const Shows = () => {
     const shows = [
+
+    ];
+           
+
+    const previousShows = [
         {
-            location: "Stone Circle Theater",
+            location: "Stone Circle Theatre",
             date: "Dec 8, 2024",
             flyer: stoneCircleFlyer,
             bands: [
                 { name: "Oldstar", musicUrl: "https://open.spotify.com/artist/65EcXsR7j4l6Thkrr5a1AX?si=I5NB2chnS_CRgR6gOPXRNw" }
             ]
-        }
-    ];
-
-    const previousShows = [
+        },
         {
             location: "Ray's Bar",
             date: "Nov 17, 2024",
@@ -99,41 +101,45 @@ const Shows = () => {
         style={{ backgroundImage: `url(${rippedPaper})` }}>
 
             <img src={upcomingShows} alt='Upcoming Shows' className="mx-auto w-1/2 pt-20 pb-5"></img>
-            <table className="min-w-full rounded mt-4 font-alteHaas bg-transparent">
-                <thead>
-                    <tr>
-                        <th className="py-2 px-4 text-left">Location</th>
-                        <th className="py-2 px-4 text-left">Date</th>
-                        <th className="py-2 px-4 text-left">With</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {shows.map((show, index) => (
-                        <tr key={index}>
-                            <td
-                                className="py-2 px-4 text-blue-600 cursor-pointer hover:underline"
-                                onClick={() => setSelectedFlyer(show.flyer)}
-                            >
-                                {show.location}
-                            </td>
-                            <td className="py-2 px-4">{show.date}</td>
-                            <td className="py-2 px-4">
-                                {show.bands.map((band, i) => (
-                                    <a
-                                        key={i}
-                                        href={band.musicUrl}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-blue-600 hover:underline mr-2"
-                                    >
-                                        {band.name}
-                                    </a>
-                                ))}
-                            </td>
+            { shows.length > 0 ? (
+                <table className="min-w-full rounded mt-4 font-alteHaas bg-transparent">
+                    <thead>
+                        <tr>
+                            <th className="py-2 px-4 text-left">Location</th>
+                            <th className="py-2 px-4 text-left">Date</th>
+                            <th className="py-2 px-4 text-left">With</th>
                         </tr>
-                    ))}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        {shows.map((show, index) => (
+                            <tr key={index}>
+                                <td
+                                    className="py-2 px-4 text-blue-600 cursor-pointer hover:underline"
+                                    onClick={() => setSelectedFlyer(show.flyer)}
+                                >
+                                    {show.location}
+                                </td>
+                                <td className="py-2 px-4">{show.date}</td>
+                                <td className="py-2 px-4">
+                                    {show.bands.map((band, i) => (
+                                        <a
+                                            key={i}
+                                            href={band.musicUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-blue-600 hover:underline mr-2"
+                                        >
+                                            {band.name}
+                                        </a>
+                                    ))}
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            ) : <p className="text-center">
+                No upcoming shows right now, check back later!
+                </p> }
 
             <div className="flex justify-center">
                 <button

@@ -35,7 +35,7 @@ const Header = () => {
       };
 
     return (
-        <div className="header-container w-full flex justify-evenly py-4 sticky top-0 z-10 bg-indigo-300 bg-cover bg-center">
+        <div className=" hidden w-full md:flex justify-evenly py-4 sticky top-0 z-10 bg-indigo-300 bg-cover bg-center">
           {/* style={{ backgroundImage: `url(${linedPaper2})` }}> */}
 
             {/* Home Section */}
