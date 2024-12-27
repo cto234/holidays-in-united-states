@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <>
-    <Router>
+    <Router basename="/holidays-in-united-states">
       <Routes>
-        <Route path='/holidays-in-united-states' element={<Home />} />
+        <Route path='/' element={<Home />} />
       </Routes>
     </Router>
     </>
@@ -14,3 +14,5 @@ function App() {
 }
 
 export default App;
+
+//For future reference when deploying: You need to add "homepage": "https://your-username.github.io/repository-name" to package.json
