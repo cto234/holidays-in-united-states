@@ -6,7 +6,7 @@ function App() {
     <>
     <Router>
       <Routes>
-        <Route path='/home' element={<Home />} />
+        <Route path='/holidays-in-united-states' element={<Home />} />
       </Routes>
     </Router>
     </>
@@ -14,5 +14,3 @@ function App() {
 }
 
 export default App;
-
-//test
