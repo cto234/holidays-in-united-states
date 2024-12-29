@@ -1,2 +1,1 @@
-A site for my band
-Built using React and Tailwind
+A site for my band, Holidays in United States. Built using React and Tailwind.
