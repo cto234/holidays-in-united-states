@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/holidays-in-united-states/static/css/main.66a437ee.css",
+    "main.js": "/holidays-in-united-states/static/js/main.1cf01160.js",
+    "static/js/453.39b95958.chunk.js": "/holidays-in-united-states/static/js/453.39b95958.chunk.js",
+    "static/media/lined-paper-2.jpg": "/holidays-in-united-states/static/media/lined-paper-2.852e0f45db51cb73092e.jpg",
+    "static/media/stone-circle-flyer.jpeg": "/holidays-in-united-states/static/media/stone-circle-flyer.f09904c7879af80cc3b8.jpeg",
+    "static/media/doodles.jpg": "/holidays-in-united-states/static/media/doodles.fc173f33d496e4cd3870.jpg",
+    "static/media/rubalad-flyer.jpeg": "/holidays-in-united-states/static/media/rubalad-flyer.a790111df3cda9179684.jpeg",
+    "static/media/dark-lined-paper.jpg": "/holidays-in-united-states/static/media/dark-lined-paper.1bec175207bea7002137.jpg",
+    "static/media/ttj-flyer.jpeg": "/holidays-in-united-states/static/media/ttj-flyer.d0c60ee35d68d016b327.jpeg",
+    "static/media/branching-out-flyer.jpeg": "/holidays-in-united-states/static/media/branching-out-flyer.af61dbd8b06520b9f210.jpeg",
+    "static/media/babys-flyer.png": "/holidays-in-united-states/static/media/babys-flyer.c6f0a7a21c423175c67f.png",
+    "static/media/windjammer-flyer.jpeg": "/holidays-in-united-states/static/media/windjammer-flyer.aeb56c04fb09aaeacfe2.jpeg",
+    "static/media/ripped-paper.png": "/holidays-in-united-states/static/media/ripped-paper.442a949d859a226fbf8f.png",
+    "static/media/apple-music-logo.png": "/holidays-in-united-states/static/media/apple-music-logo.2dab162c1d481cbdf467.png",
+    "static/media/rays-flyer.jpeg": "/holidays-in-united-states/static/media/rays-flyer.ff63ac70e30d0cd9516c.jpeg",
+    "static/media/AlteHaasGroteskRegular.ttf": "/holidays-in-united-states/static/media/AlteHaasGroteskRegular.6ae6623ec966c59db9f2.ttf",
+    "static/media/hius-logo.png": "/holidays-in-united-states/static/media/hius-logo.2b844f08e01d6250fef5.png",
+    "static/media/home-button.png": "/holidays-in-united-states/static/media/home-button.a8ae6dbb4c54fd5e72fb.png",
+    "static/media/upcoming-shows.png": "/holidays-in-united-states/static/media/upcoming-shows.0599486971c650281224.png",
+    "static/media/nyc-emo.png": "/holidays-in-united-states/static/media/nyc-emo.b6ee19abd36ef16cd46d.png",
+    "static/media/spotify-logo.png": "/holidays-in-united-states/static/media/spotify-logo.f9221a768aa13af62f9f.png",
+    "static/media/bandcamp-logo.png": "/holidays-in-united-states/static/media/bandcamp-logo.6190dd1c7517678e7e02.png",
+    "static/media/videos-button.png": "/holidays-in-united-states/static/media/videos-button.4e3479b92c6e2ab49591.png",
+    "static/media/shows-button.png": "/holidays-in-united-states/static/media/shows-button.8d562efcd30e677fe1dd.png",
+    "static/media/left-arrow.png": "/holidays-in-united-states/static/media/left-arrow.ab4a427b24b975cc6f44.png",
+    "index.html": "/holidays-in-united-states/index.html",
+    "main.66a437ee.css.map": "/holidays-in-united-states/static/css/main.66a437ee.css.map",
+    "main.1cf01160.js.map": "/holidays-in-united-states/static/js/main.1cf01160.js.map",
+    "453.39b95958.chunk.js.map": "/holidays-in-united-states/static/js/453.39b95958.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66a437ee.css",
+    "static/js/main.1cf01160.js"
+  ]
+}
