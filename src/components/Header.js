@@ -19,14 +19,14 @@ const Header = () => {
           smooth: 'easeInOutQuad',
         });
       };
-
+      {/* 
     const scrollToMerch = () => {
         scroll.scrollTo('merchSection', {
           duration: 800,
           smooth: 'easeInOutQuad',
         });
       };
-
+    */}
     const scrollToShows = () => {
         scroll.scrollTo('showsSection', {
           duration: 800,
