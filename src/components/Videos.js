@@ -8,6 +8,7 @@ const Videos = () => {
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
     const videoUrls = [
+        'https://www.youtube.com/embed/8hpT7Zd0W7I?si=xMGNKPOUmU-N5Kc8',
         'https://www.youtube.com/embed/O9Ynw0ns98U?si=rVhWGf1CkxPv9wM9',
         'https://www.youtube.com/embed/5LbY7oKXjSk?si=zpxS83-LUTJ8zM-b',
         'https://www.youtube.com/embed/zuXWz4Q8-VA?si=SJcBnjd8zLU_Rvg_'

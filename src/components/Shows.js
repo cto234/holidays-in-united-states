@@ -6,7 +6,9 @@ import branchingOutFlyer from '../images/branching-out-flyer.jpeg';
 import rubaladFlyer from '../images/rubalad-flyer.jpeg';
 import windjammerFlyer from '../images/windjammer-flyer.jpeg';
 import ttjFlyer from '../images/ttj-flyer.jpeg';
-import raysFlyer from '../images/rays-flyer.jpeg'
+import raysFlyer from '../images/rays-flyer.jpeg';
+import rabbitholeflyer from '../images/rabbit-hole-flyer.jpg';
+import perfectlyImperfectFlyer from '../images/perf-imperf-flyer.jpg';
 import rippedPaper from '../images/ripped-paper.png'
 
 const Shows = () => {
@@ -16,6 +18,23 @@ const Shows = () => {
            
 
     const previousShows = [
+        {
+            location: "Baby's All Right",
+            date: "Feb 21, 2025",
+            flyer: perfectlyImperfectFlyer,
+            bands: [
+                { name: "Urika's Bedroom", musicUrl: "https://open.spotify.com/artist/6LhbOssuAbrXa5Wzcskhhw?si=a57e8kqhSZyTTyMvrMxT0w" },
+                { name: "Comet", musicUrl: "https://open.spotify.com/artist/60p7G6IdFcd9Pyk86uAnrs?si=0JBHdr1OTc-i5GeWs05oJA"}
+            ]
+        },
+        {
+            location: "Rabbit Hole",
+            date: "Jan 17, 2025",
+            flyer: rabbitholeflyer,
+            bands: [
+                { name: "Yugone", musicUrl: "https://open.spotify.com/artist/5F9fM5gQGX3R3ZJvSoAKIs?si=wpSV5ohdR4et3Kk9LJoTew" }
+            ]
+        },
         {
             location: "Stone Circle Theatre",
             date: "Dec 8, 2024",
